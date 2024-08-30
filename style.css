@@ -116,7 +116,15 @@ body{
     width: 90%;
     height: 90%;
     padding: 20px 10px;
+     cursor: pointer;
+     transition: all 0.5s ease-out;
     /* border: 1px solid black; */
+}
+.nk:hover{
+    filter: grayscale(20);
+}
+.car .car-world .img-item:hover{
+    transform: scale(1.1) perspective(1000px);
 }
 .car .car-world .img-item .img-car{
     width: 100%;
@@ -134,5 +142,150 @@ body{
 }
 .car .car-world .img-item.toyota:hover:after{
     background: #c4b3b3;
-    box-shadow: 0 0 0 ;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.ford::after{
+    content: 'Ford';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.ford:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.ferrari::after{
+    content: 'Ferrari';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.ferrari:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.ferrari::after{
+    content: 'Toyota car';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.ferrari:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.tesla::after{
+    content: 'Tesla';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.tesla:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.mercedes::after{
+    content: 'Mercedes';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.mercedes:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.honda::after{
+    content: 'Honda';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.honda:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+.car .car-world .img-item.gtr::after{
+    content: 'GTR';
+    background: #f7f1f1;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.car .car-world .img-item.gtr:hover:after{
+    background: #c4b3b3;
+    box-shadow: 0 0 12px #000;
+}
+
+.scroll{
+    color: green;
+    font-size: 4.4rem;
+    font-weight: 600;
+    width: 500px;
+    height: 110px;
+    background: #fff;
+    box-shadow: 0 0 12px #000;
+    /* display: none; */
+    text-align: center;
+    position: sticky;
+    top: 30%;
+    transform: translateX(1900px);
+    z-index: 3;
+    overflow-y: hidden;
+}
+.ji{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background: linear-gradient(20deg, red, #fff, red, green, red, green, red);
+    background-clip: text;
+    color: transparent;
+}
+
+.pl{
+    color: blue;
+    font-size: 2rem;
+}
+#box{
+    padding: 20px 30px;
+    width: 20%;
+    height: 20%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #dbeedbf1;
+    box-shadow: 0 0 12px rgb(116, 214, 116);
+    position: relative;
+    z-index: 3;
 }

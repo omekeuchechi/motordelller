@@ -13,16 +13,27 @@
         </div>
 
         <ul class="ul">
-            <li class="li active"><a href="#" class="a">Home</a></li>
-            <li class="li"><a href="#" class="a">Cars</a></li>
-            <li class="li"><a href="#" class="a">About</a></li>
-            <li class="li"><a href="#" class="a">Pricing</a></li>
-            <li class="li"><a href="#" class="a">Our Blog</a></li>
+            <li class="li active"><a href="#home" class="a">Home</a></li>
+            <li class="li"><a href="#car" class="a">Cars</a></li>
+            <li class="li"><a href="#about" class="a">About</a></li>
+            <li class="li"><a href="#pricing" class="a">Pricing</a></li>
+            <li class="li"><a href="#our-blog" class="a">Our Blog</a></li>
         </ul>
     </div>
 
+    <div id="box">
+        <span class="span-dialog">welcome</span>
+        <span id="location"></span>
+    </div>
+<!-- 
+    <div class="scroll">
+        <h1 class="ji">your are at</h1>
+    </div> -->
+
+    <!-- <p class="pl">good</p> -->
+
 <!-- ============================================main=================================================== -->
- <div class="main">
+ <div class="main" id="main">
     <div class="every">
         <h1 class="h1">
             We have Everything your <span class="car-word">Car</span> Need
@@ -39,43 +50,53 @@
     
 
 
- <div class="car">
+ <div class="car" id="car">
     <h1 class="all-car">We Have All Types Of Cars</h1>
     <p class="ex">"Explore Our Vast Selection:<br>
         Your Destination For All Types Of Cars And Nigeria And Beyond"
     </p>
 <div class="car-world">
-    <div class="img-item toyota">
+    <div class="img-item toyota" id="showDialog">
         <img src="img/Toyota/Screenshot_20240129-120007.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item ford">
+    <div class="img-item ford" id="showDialog">
         <img src="img/ford/Screenshot_20240129-123444.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item ferrari">
-        <img src="img/Ferrari/Screenshot_20240129-122507.jpg" alt=""class="img-car">
+    <div class="img-item ferrari" id="showDialog">
+        <img src="img/Ferrari/Screenshot_20240129-122434.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item">
+    <div class="img-item tesla" id="showDialog">
         <img src="img/tesla/Screenshot_20240129-122835.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item mercedes">
+    <div class="img-item mercedes" id="showDialog">
         <img src="img/Mercedes/car4.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item honda">
+    <div class="img-item honda" id="showDialog">
         <img src="img/Honda/Screenshot_20240129-115819.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item gtr">
+    <div class="img-item gtr" id="showDialog">
         <img src="img/GTR/Screenshot_20240129-125447.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item toyota">
+    <div class="img-item toyota" id="showDialog">
         <img src="img/Toyota/Screenshot_20240129-120058.jpg" alt=""class="img-car">
     </div>
-    <div class="img-item ford">
+    <div class="img-item ford" id="showDialog">
         <img src="img/ford/Screenshot_20240129-123759.jpg" alt="" class="img-car">
     </div>
 </div>
 </div>
 
+
+
+     <dialog id="myDialog">
+        <p>this is a car</p>
+        <button id="closeDialog">close</button>
+     </dialog>
+
     <script src="/fontawesome-free-6.5.2-web/js/all.js"></script>
     <script src="location.js"></script>
+    <script src="mian.js"></script>
+    <script src="jquery.js"></script>
+    <script src="dialog.js"></script>
 </body>
 </html>

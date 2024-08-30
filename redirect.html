@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===============html approach=================== -->
+    <!-- <meta http-equiv="refresh" content="5; url=/homepage.html"> -->
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .count{
+            color: red;
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+        }
+
+ dialog {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+ button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ #closeDialog {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 40px;
+   margin-top: 50px;
+   border: 0.7px solid #010101;
+   width: 30%;
+   margin-left: 35%;
+   padding: 30px 20px;
+}
+
+.content .motor-loading{
+   color: rgb(16, 218, 16);
+}
+.content p{
+   color: #aa9f9f;
+   font-size: larger;
+   animation: blinking 2s infinite ease-in-out;
+}
+@keyframes blinking {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #aa9f9f;
+    }
+}
+
+#showDialog{
+    font-size: 1.5rem;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: crimson;
+    color: #fff;
+    transition: all 05s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#showDialog:hover{
+    color: #fff;
+    background: rgb(255, 58, 98);
+}
+
+@media (max-width: 600px){
+    img{
+        width: 20%;
+        height: 30%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <h1 class="count">welcome to motor-empire</h1>
+
+    <div class="content">
+        <img src="img/parts/images (2).jpeg" alt="">
+        <h1 class="motor-loading">You have successfully log-in</h1>
+
+        <p>Please clicked the button below for more information <i class="fas fa-info-circle"></i></p>
+
+        <button id="showDialog">Show Dialog</button>
+    </div>
+
+    <dialog id="myDialog">
+        <div class="center-box">
+
+            <div class="bd"></div>
+            <i class="fa-brands fa-atlassian"></i>
+            
+            <h1>you have successfully log-in</h1>
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <button id="closeDialog">Close</button>
+
+        </div>
+    </dialog>
+
+    <script>
+
+        //auto redirect section
+        let counter = document.querySelector("h1");
+        let count = 1;
+
+        counter.style.textTransform = "uppercase";
+
+        setInterval(() =>{
+
+            counter.innerText = count;
+            count++
+
+            // ====js approach====
+            if(count > 5) location.replace('/homepage.html');
+
+        }, 1000);
+
+        //dialog section
+
+    document.getElementById('showDialog').addEventListener('click', function() {
+    const dialog = document.getElementById('myDialog');
+    dialog.showModal();
+});
+
+    document.getElementById('closeDialog').addEventListener('click', function() {
+    const dialog = document.getElementById('myDialog');
+    dialog.close();
+});
+    </script>
+    <script src="fontawesome-free-6.5.2-web/js/all.js"></script>
+</body>
+</html>
