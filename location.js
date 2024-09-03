@@ -53,11 +53,20 @@ const scrollDetails =() =>{
 //     // }
 // });
 
+//get of url when we clicked
 const httpValue = location.pathname;
 const locationText = document.getElementById("location");
 const  box = document.getElementById("box");
 box.style.display = "none";
 window.addEventListener("hashchange", () =>{
+    // console.log(location)
+    box.style.display = "block";
+    setTimeout(() => {
+        box.style.display = "none";
+        locationText.innerHTML = httpValue;
+    }, 1000);
+})
+document.getElementsByClassName("a").addEventListener("mouseover", () =>{
     // console.log(location)
     box.style.display = "block";
     setTimeout(() => {
