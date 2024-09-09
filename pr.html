@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        <li>apple</li>
+        <li>rice</li>
+        <li>
+            <strong id="md">
+                pawpaw
+            </strong>
+        </li>
+    </ul> -->
+
+    <ul>
+        <l1>bannana<button class="btn-add">add</button></l1>
+        <l1>orange<button class="btn-add">add</button></l1>
+        <l1>semo<button class="btn-add">add</button></l1>
+    </ul>
+
+    <script>
+        // const ref = document.querySelector("#md");
+        // const list = ref.closest("ul");
+
+        //second work you can work with js closest()
+        const button = document.querySelectorAll(".btn-add");
+        // const ul = document.querySelector("#ul");
+
+        button.forEach(btn => {
+            btn.addEventListener("click", () => {
+                console.log(btn.closest("li"));
+            });
+        });
+        // console.log(list);
+    </script>
+</body>
+</html>

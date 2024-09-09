@@ -302,19 +302,20 @@ body{
     gap: 200px;
     margin-top: 300px;
     /* flex-direction: column; */
-    height: 100vh;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background: #fff;
     transition: all 0.5s ease-in-out;
     word-wrap: break-word;
+    width: 100%;
+    height: 100%;
 }
 .section:hover{
-    background: #fdfafa;
+    /* background: #fdfafa; */
     color: #000;
 }
 .section .img-about{
-    width: 50%;
-    height: 140%;
+    width: 90%;
+    height: 170%;
     /* background: url(./images/IMG_20230314_093434.jpg) no-repeat center center/cover; */
     transition: all 0.5s ease-in-out;
 }
@@ -397,20 +398,20 @@ body{
 }
 .part-section .part-img-sec .part{
     background: #e7e3e3;
-    width: 700px;
-    height: 900px;
-    padding: 30px 50px;
+    /* width: 600px; */
+    /* height: 500px; */
+    padding: 30px 20px;
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .part-section .part-img-sec .part .part-img{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 .part-section .part-img-sec .part .part-name{
     font-size: 2.4rem;
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .part-section .part-img-sec .part .amt{
     color: red;
@@ -423,7 +424,7 @@ body{
 .part-section .part-img-sec .part .buy{
     background: red;
     color: #fff;
-    padding: 20px 80px;
+    padding: 10px 20px;
     font-size: 3rem;
     border-radius: 10px;
     cursor: pointer;
@@ -441,4 +442,51 @@ body{
 }
 .part-section .part-img-sec .part .part-img:hover{
     filter: sepia(9);
+}
+/* ========================blog====================================== */
+.blog{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.blog .blog-details{
+    padding: 10px 20px;
+    width: 30%;
+}
+.blog .blog-details .blog-pic, .blog .blog-details .blog-img{
+    width: 440px;
+}
+.blog .blog-details .posted-date{
+    color: red;
+    font-size: 1.8rem;
+}
+.blog .blog-details .blog-text{
+    color: #010101;
+}
+footer{
+    background: rgb(9, 9, 48);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 50px;
+}
+footer .footer-box{
+    padding: 20px 20px;
+}
+footer .footer-box .logo-name,footer .footer-box .page{
+    color: #fff;
+    font-size: 2.5rem;
+}
+footer .footer-box .ul-list{
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+footer .reserved{
+    color: #fff;
+    display: block;
+    margin-left: 30%;
+    justify-self: center;
+    padding: 10px 20px;
+    /* background: red; */
 }
